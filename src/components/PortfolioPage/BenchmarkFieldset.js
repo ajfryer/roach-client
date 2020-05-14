@@ -46,7 +46,16 @@ BenchmarkFieldset.propTypes = {};
 
 // custom styled components
 
-const Fieldset = styled.fieldset``;
+const Fieldset = styled.fieldset`
+  margin-top: 1rem;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+    margin-top: 0rem;
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoint.desktop}) {
+  }
+`;
 
 const Legend = styled.legend`
   text-align: center;
