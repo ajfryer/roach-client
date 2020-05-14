@@ -4,7 +4,7 @@
 import config from 'config';
 
 // set api endpoint from config
-const api = `${config.API_BASE_URL}/portfolio`;
+const api = `${config.API_BASE_URL}/api/portfolio`;
 
 export const fetchPortfolios = async (strategy, weights) => {
   // endpoints

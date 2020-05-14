@@ -25,7 +25,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "serve build",
+    "deploy": "now --prod",
+    "predeploy": "CI=true yarn test && yarn audit-filtered",
+    "audit-filtered": "bash -c 'yarn audit --level high; [[ $? -ge 8 ]] && exit 1 || exit 0'"
   },
   "eslintConfig": {
     "extends": "react-app"
