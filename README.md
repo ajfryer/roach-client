@@ -10,7 +10,7 @@ Frontend for Roach - harder to kill investment portfolios. Discover how alternat
   <img src="https://github.com/ajfryer/personal-portfolio/raw/master/img/roach-screenshot-portfolio.png" width="420" alt="roach portfolio page screenshot">
 </span>
 
-Tech stack: React, HTML5, CSS3
+Tech stack: React, Styled Components, HTML5, CSS3
 
 [Live Demo](https://roach.now.sh)
 
