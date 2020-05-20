@@ -1,14 +1,19 @@
+//node_modules imports
 import React from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
-import Light from 'resources/fonts/DINOT-Light.ttf';
-import Regular from 'resources/fonts/DINOT-Regular.ttf';
-import Medium from 'resources/fonts/DINOT-Medium.ttf';
-import Bold from 'resources/fonts/DINOT-Bold.ttf';
-import Black from 'resources/fonts/DINOT-Black.ttf';
-import Italic from 'resources/fonts/DINOT-Italic.ttf';
+//project imports
+import DINOTLight from 'resources/fonts/DINOT-Light.ttf';
+import DINOTRegular from 'resources/fonts/DINOT-Regular.ttf';
+import DINOTMedium from 'resources/fonts/DINOT-Medium.ttf';
+import DINOTBold from 'resources/fonts/DINOT-Bold.ttf';
+import DINOTBlack from 'resources/fonts/DINOT-Black.ttf';
+import DINOTItalic from 'resources/fonts/DINOT-Italic.ttf';
 
+/*
+Container for Theme provider and global styles
+*/
 const Theme = (props) => {
   return (
     <ThemeProvider theme={theme}>
@@ -18,7 +23,7 @@ const Theme = (props) => {
   );
 };
 
-// dynamic theme object
+// Context Value for ThemeProvider
 export const theme = {
   // typography
   fontFamily: {
@@ -122,28 +127,28 @@ export const GlobalStyles = createGlobalStyle`
 
   /* font styles */
   @font-face {
-  font-family: 'DINOT-Light';
-  src: local('DINOT-Light'), url(${Light}) format('truetype');
+    font-family: 'DINOT-Light';
+    src: local('DINOT-Light'), url(${DINOTLight}) format('truetype');
   }
   @font-face {
     font-family: 'DINOT-Regular';
-    src: local('DINOT-Regular'), url(${Regular}) format('truetype');
+    src: local('DINOT-Regular'), url(${DINOTRegular}) format('truetype');
   }
   @font-face {
     font-family: 'DINOT-Medium';
-    src: local('DINOT-Medium'), url(${Medium}) format('truetype');
+    src: local('DINOT-Medium'), url(${DINOTMedium}) format('truetype');
   }
   @font-face {
     font-family: 'DINOT-Bold';
-    src: local('DINOT-Bold'), url(${Bold}) format('truetype');
+    src: local('DINOT-Bold'), url(${DINOTBold}) format('truetype');
   }
   @font-face {
     font-family: 'DINOT-Black';
-    src: local('DINOT-Black'), url(${Black}) format('truetype');
+    src: local('DINOT-Black'), url(${DINOTBlack}) format('truetype');
   }
   @font-face {
     font-family: 'DINOT-Italic';
-    src: local('DINOT-Italic'), url(${Italic}) format('truetype');
+    src: local('DINOT-Italic'), url(${DINOTItalic}) format('truetype');
   }
 
   /* box styles */

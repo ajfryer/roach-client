@@ -1,13 +1,12 @@
 import '@testing-library/jest-dom/extend-expect';
+// node_modules imports
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import renderer from 'react-test-renderer';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { ThemeProvider } from 'styled-components';
 import { MemoryRouter } from 'react-router-dom';
-import { Theme } from 'components/Common/Theme';
 
 global.React = React;
 global.ReactDOM = ReactDOM;
