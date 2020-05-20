@@ -22,8 +22,6 @@ Adds background
 const PortfolioPage = (props) => {
   const { portfolios } = useContext(PortfoliosContext);
 
-  console.log('portfolio page render', portfolios);
-
   if (!portfolios) return <Loader />;
 
   return (
