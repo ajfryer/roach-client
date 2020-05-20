@@ -1,7 +1,6 @@
 // node_modules imports
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { useHistory } from 'react-router-dom';
 
 // project imports
 import Header from 'components/Common/Header';

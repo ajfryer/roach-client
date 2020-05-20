@@ -1,6 +1,5 @@
 // node_modules imports
-import React, { useState, useContext, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
 
 // project imports
@@ -158,7 +157,5 @@ const SubmitButton = styled(Button)`
     animation: none;
   }
 `;
-
-Form.propTypes = {};
 
 export default Form;

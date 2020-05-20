@@ -1,15 +1,8 @@
 // Chart
 
-import React, {
-  useState,
-  useRef,
-  useEffect,
-  useCallback,
-  useLayoutEffect,
-} from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import styled from 'styled-components';
 import * as V from 'victory';
-import useDimensions from 'react-use-dimensions';
 
 /*  props:
     chartDatas: array of chartDatas
@@ -72,7 +65,7 @@ const chartWrapper = (ChartComponent) => {
       <Container ref={containerRef}>
         <Legend chartDatas={props.chartDatas} />
         <svg
-          viewBox={'0 0' + ' ' + dims.width + ' ' + dims.height}
+          viewBox={`0 0 ${dims.width} ${dims.height}`}
           preserveAspectRatio="none"
         >
           <ChartComponent {...props} width={dims.width} height={dims.height} />

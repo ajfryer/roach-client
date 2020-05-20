@@ -1,6 +1,5 @@
 // node_modules imports
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // project imports
@@ -33,6 +32,7 @@ const MarketingPage = (props) => {
   );
 };
 
+// private styled components
 const Wrapper = styled.div``;
 
 const Background = styled.div`

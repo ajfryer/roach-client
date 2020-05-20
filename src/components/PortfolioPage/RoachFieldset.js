@@ -1,5 +1,5 @@
+// node_modules imports
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const RoachFieldset = (props) => {
@@ -44,19 +44,7 @@ const RoachFieldset = (props) => {
   );
 };
 
-/*
-RoachFieldset.propTypes = {
-  title: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['checkbox', 'radio']).isRequired,
-  setName: PropTypes.string.isRequired,
-  options: PropTypes.array.isRequired,
-  selectedOptions: PropTypes.array,
-  controlFunc: PropTypes.func.isRequired,
-};
-*/
-
-// custom styled components
-
+// private styled components
 const Legend = styled.legend`
   text-align: center;
   width: 100%;

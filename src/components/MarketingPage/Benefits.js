@@ -28,7 +28,12 @@ const Benefits = (props) => {
         <Content>
           <Card>
             {' '}
-            <img src={OlderInvestors} width={50} height={50} />
+            <img
+              src={OlderInvestors}
+              width={50}
+              height={50}
+              alt="near retirees"
+            />
             <h4>Near Retirees</h4>
             <p>
               The 10 years before retirement are difficult times to invest
@@ -37,7 +42,12 @@ const Benefits = (props) => {
           </Card>
           <Card>
             {' '}
-            <img src={YoungInvestors} width={50} height={50} />
+            <img
+              src={YoungInvestors}
+              width={50}
+              height={50}
+              alt="big purchase savers"
+            />
             <h4>Big Purchase Savers</h4>
             <p>
               Younger investors saving for big purchases may not tolerate large
@@ -46,7 +56,12 @@ const Benefits = (props) => {
           </Card>
           <Card>
             {' '}
-            <img src={InstitutionalInvestors} width={50} height={50} />
+            <img
+              src={InstitutionalInvestors}
+              width={50}
+              height={50}
+              alt="institutional investors"
+            />
             <h4>Liability-driven Institutions</h4>
             <p>
               {' '}

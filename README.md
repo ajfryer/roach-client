@@ -2,6 +2,14 @@
 
 Frontend for Roach - harder to kill investment portfolios. Discover how alternatives like gold and futures can diversify your stock and bond portfolio
 
+<span align="left">
+  <img src="https://github.com/ajfryer/personal-portfolio/raw/master/img/roach-screenshot-splash.png" width="420" alt="roach splash page screenshot">
+</span>
+
+<span align="left">
+  <img src="https://github.com/ajfryer/personal-portfolio/raw/master/img/roach-screenshot-portfolio.png" width="420" alt="roach portfolio page screenshot">
+</span>
+
 Tech stack: React, HTML5, CSS3
 
 [Live Demo](https://roach.now.sh)

@@ -1,8 +1,9 @@
+// node_modules imports
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+// project imports
 import Logo from 'components/Common/Logo';
 
 const Footer = (props) => {
@@ -65,8 +66,5 @@ const Disclaimer = styled.div`
   letter-spacing: ${({ theme }) => theme.letterSpacing[6]};
   color: #8aedcf;
 `;
-
-Footer.propTypes = {};
-Footer.defaultProps = {};
 
 export default Footer;

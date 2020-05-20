@@ -1,21 +1,14 @@
-// base imports
+// node_modules imports
 import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import useLocalStorageState from 'use-local-storage-state';
 
-// config
+// project imports
 import { ROACH_DEFAULT, BENCHMARK_DEFAULT } from 'config.js';
-
-// react components
 import Theme from 'components/Common/Theme';
 import MarketingPage from 'components/MarketingPage/MarketingPage';
 import PortfolioPage from 'components/PortfolioPage/PortfolioPage';
 import ErrorBoundary from 'components/Common/ErrorBoundary';
-
-// react context
 import PortfoliosContext from 'context.js';
-
-// backend api
 import { fetchPortfolios } from 'api.js';
 
 /*
@@ -46,8 +39,6 @@ const App = () => {
         },
       };
 
-      console.log('setting app state', data);
-
       setPortfolios(data);
       setLoading(false);
     } catch (error) {
@@ -60,8 +51,9 @@ const App = () => {
     const setDefaultPortfolios = async () => {
       await getPortfolios(ROACH_DEFAULT, BENCHMARK_DEFAULT);
     };
-    console.log('loaded portfolios on first render', !portfolios);
+
     if (!portfolios) setDefaultPortfolios();
+    //eslint-disable-next-line
   }, []);
 
   return (

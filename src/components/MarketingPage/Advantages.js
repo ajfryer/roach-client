@@ -22,7 +22,12 @@ const Advantages = (props) => {
       <Content>
         <Card>
           {' '}
-          <img src={DownsideCapture} width={50} height={50} />
+          <img
+            src={DownsideCapture}
+            width={50}
+            height={50}
+            alt="risk management"
+          />
           <h4>Risk Management</h4>
           <p>
             Even with bonds, portfolios can take years to recover from losses.
@@ -31,7 +36,12 @@ const Advantages = (props) => {
         </Card>
         <Card>
           {' '}
-          <img src={UpsideCapture} width={50} height={50} />
+          <img
+            src={UpsideCapture}
+            width={50}
+            height={50}
+            alt="alternative returns"
+          />
           <h4>Alternative Returns</h4>
           <p>
             With historically low rates and high debt, Roach portfolios aim to
@@ -40,7 +50,12 @@ const Advantages = (props) => {
         </Card>
         <Card>
           {' '}
-          <img src={LowCorrelation} width={50} height={50} />
+          <img
+            src={LowCorrelation}
+            width={50}
+            height={50}
+            alt="diversification"
+          />
           <h4>Diversification</h4>
           <p>
             {' '}

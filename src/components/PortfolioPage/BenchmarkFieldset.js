@@ -1,5 +1,5 @@
+// node_modules imports
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const BenchmarkFieldset = (props) => {
@@ -42,10 +42,7 @@ const BenchmarkFieldset = (props) => {
   );
 };
 
-BenchmarkFieldset.propTypes = {};
-
-// custom styled components
-
+// private styled components
 const Fieldset = styled.fieldset`
   margin-top: 1rem;
 

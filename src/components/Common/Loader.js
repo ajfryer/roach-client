@@ -1,24 +1,23 @@
+// node_modules imports
 import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
-import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 
+// project imports
 import PortfoliosContext from 'context';
 
-/*
- * Loader Component
- * ================
- * - conditionally renders children components based on props.loaded
- * - helps us avoid errors that arise when rendering components before they have data!
- *
- */
 const Loader = ({ children }) => {
   const { loading, portfolios } = useContext(PortfoliosContext);
 
   if (loading || !portfolios) {
     return (
       <Container type={!!portfolios}>
-        <Spinner>{Array(12).fill(<div></div>)}</Spinner>
+        <Spinner>
+          {Array(12)
+            .fill(<div></div>)
+            .map((_, i) => (
+              <div key={i}></div>
+            ))}
+        </Spinner>
         loading!
       </Container>
     );
@@ -27,6 +26,7 @@ const Loader = ({ children }) => {
   }
 };
 
+// private styled components
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -117,9 +117,5 @@ const Spinner = styled.div`
     }
   }
 `;
-
-Loader.propTypes = {
-  loaded: PropTypes.bool,
-};
 
 export default Loader;

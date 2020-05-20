@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -31,9 +30,5 @@ const Button = styled.button`
     color: #666666;
   }
 `;
-
-Button.propTypes = {};
-
-Button.defaultProps = {};
 
 export default Button;

@@ -23,12 +23,6 @@ export const fetchPortfolios = async (strategy, weights) => {
   const roach = await roachRes.json();
   const benchmark = await benchmarkRes.json();
 
-  console.log(
-    'fetched lengths',
-    JSON.parse(roach.value).results.returns.length,
-    JSON.parse(benchmark.value).results.returns.length
-  );
-
   // return portfolios data
   return {
     roach,

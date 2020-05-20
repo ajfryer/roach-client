@@ -25,7 +25,12 @@ const Features = () => {
       <Content>
         <Card>
           {' '}
-          <img src={StocksBonds} width={50} height={50} />
+          <img
+            src={StocksBonds}
+            width={50}
+            height={50}
+            alt="stocks and bonds"
+          />
           <h4>Stocks and Bonds</h4>
           <p>
             Like other portfolios, Roach features global stocks diverified with
@@ -34,7 +39,12 @@ const Features = () => {
         </Card>
         <Card>
           {' '}
-          <img src={GoldFutures} width={50} height={50} />
+          <img
+            src={GoldFutures}
+            width={50}
+            height={50}
+            alt="gold and futures"
+          />
           <h4>Gold and Futures</h4>
           <p>
             Unlike others, Roach adds gold and managed futures, two asset
@@ -43,7 +53,12 @@ const Features = () => {
         </Card>
         <Card>
           {' '}
-          <img src={NoDINOS} width={50} height={50} />
+          <img
+            src={NoDINOS}
+            width={50}
+            height={50}
+            alt="equal weight or min volatility"
+          />
           <h4>Equal Weight or Min Volatility</h4>
           <p>
             {' '}
