@@ -2,9 +2,9 @@
 
 Frontend for Roach - harder to kill investment portfolios. Discover how alternatives like gold and futures can diversify your stock and bond portfolio
 
-[Live Demo](https://roach.now.sh)
-
 Tech stack: React, HTML5, CSS3
+
+[Live Demo](https://roach.now.sh)
 
 [Server Repo](https://github.com/ajfryer/roach-server)
 
@@ -12,7 +12,7 @@ Tech stack: React, HTML5, CSS3
 
 1. `yarn install` or `npm install`
 
-2.`cp sample.env .env.development`
+2. `cp sample.env .env.development`
 
 3. Specify development API URL (default http://localhost:8000)
 
