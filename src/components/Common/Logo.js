@@ -8,7 +8,7 @@ const RoachLogo = ({ className, ...props }) => {
   return (
     <StyledWrapper {...props}>
       <Link to="/">
-        <StyledImage src={logoSVG} alt="" width={85} height={85} />
+        <StyledImage src={logoSVG} alt="roach logo" width={85} height={85} />
       </Link>
     </StyledWrapper>
   );
