@@ -18,7 +18,6 @@ import { fetchPortfolios } from 'api.js';
 - routes UI to appropriate page component 
 */
 const App = () => {
-  // instead of useState, store portfolios to local storage
   const [portfolios, setPortfolios] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -47,12 +46,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    // on first render, set default portfolios from config
-    const setDefaultPortfolios = async () => {
-      await getPortfolios(ROACH_DEFAULT, BENCHMARK_DEFAULT);
-    };
-
-    if (!portfolios) setDefaultPortfolios();
+    if (!portfolios) getPortfolios(ROACH_DEFAULT, BENCHMARK_DEFAULT);
     //eslint-disable-next-line
   }, []);
 
