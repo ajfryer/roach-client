@@ -34,9 +34,9 @@ const Footer = (props) => {
         heroku. Data is from yahoo and socgen's website. I thank all users who
         gave me feedback on the function and design. If you want to see more of
         my projects or contact me, please visit my{' '}
-        <Link to="https://ajfryer.github.io/personal-portfolio/">
+        <a href="https://ajfryer.github.io/personal-portfolio/">
           portfolio site!
-        </Link>
+        </a>
         <br />
         <br />
         Font made from{' '}
